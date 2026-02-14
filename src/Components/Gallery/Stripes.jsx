@@ -23,7 +23,7 @@ const Stripes = ({ nStripe = 10 }) => {
     "/10.png",
     "/11.png",
     "/12.png",
-  ],true)
+  ])
 
 
   const meshes = useMemo(() => {

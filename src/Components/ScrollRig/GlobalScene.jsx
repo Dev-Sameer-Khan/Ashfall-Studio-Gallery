@@ -5,7 +5,7 @@ const GlobalScene = () => {
     return (
         <>
             <SmoothScrollbar />
-            <GlobalCanvas/>
+            <GlobalCanvas flat />
         </>
     )
 }
