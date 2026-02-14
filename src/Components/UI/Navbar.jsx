@@ -2,10 +2,10 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-6 flex items-start justify-between">
-            <div className="text-zinc-400 text-sm font-medium tracking-widest flex  gap-[17vw]">
+        <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-6 flex items-start max-[599px]:items-center justify-between">
+            <div className="text-zinc-400 text-sm font-medium tracking-widest flex  max-[599px]:gap-0 gap-[17vw]">
                 ASHFALL . STUDIO
-                <div className='flex flex-col'>
+                <div className='flex flex-col max-[599px]:hidden'>
                 <a href="#home" className="text-zinc-400 text-sm hover:opacity-70 transition-opacity cursor-pointer">
                     HOME
                 </a>

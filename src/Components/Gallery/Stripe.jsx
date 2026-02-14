@@ -8,7 +8,7 @@ import { useEffect } from 'react'
 
 const Stripe = ({ nplane = 6, radius = 3, y, texture }) => {
 
-    const randTexture = gsap.utils.random(texture)
+    const randTexture = gsap.utils.random(texture,true)
 
 
     const meshes = useMemo(() => {
@@ -21,7 +21,7 @@ const Stripe = ({ nplane = 6, radius = 3, y, texture }) => {
             const z = Math.cos(angle) * radius;
 
             ms.push(
-                <Image position={[x, 0, z]} lookAt={y} key={index} texture={randTexture} />
+                <Image position={[x, 0, z]} lookAt={y} key={index} texture={randTexture()} />
             )
         }
         return ms;
