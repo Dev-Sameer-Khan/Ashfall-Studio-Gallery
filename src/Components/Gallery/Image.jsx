@@ -6,7 +6,7 @@ const Image = ({ position, texture, lookAt }) => {
 
     useEffect(() => {
         if (mesh.current && lookAt !== undefined) {
-            mesh.current.lookAt(new Vector3(0, lookAt - 500, 0))
+            mesh.current.lookAt(new Vector3(0, lookAt, 0))
         }
     }, [lookAt])
 
