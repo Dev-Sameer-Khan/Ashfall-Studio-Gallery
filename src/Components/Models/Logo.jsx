@@ -29,7 +29,7 @@ const {__lenis} = useScrollbar()
 useEffect(() => {
   if (!__lenis) return
   const onScroll = ({ progress, velocity }) => {
-    const scale = (velocity * 0.3) + 100;
+    const scale = -(velocity * 0.3) + 100;
     logo.current.rotation.y = progress * Math.PI * 6;
     logo.current.scale.set(scale, scale, scale)
   }

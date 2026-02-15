@@ -11,7 +11,7 @@ const Scene = () => {
     const track = useRef()
 
     return (
-        <main className='w-full h-[200vh] relative '>
+        <main className='w-full h-[300vh] relative '>
             <section ref={track} className='w-full h-screen sticky top-0 left-0'>
                 <UseCanvas>
                     <StickyScrollScene track={track}>

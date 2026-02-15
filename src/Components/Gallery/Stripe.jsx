@@ -29,14 +29,14 @@ const Stripe = ({ nplane = 6, radius = 3, y, texture }) => {
 
     const group = useRef()
 
-    useEffect(() => {
-        const scala = gsap.utils.random(130, 170)
+    // useEffect(() => {
+    //     const scala = gsap.utils.random(130, 170)
 
-        if (group.current) {
-            group.current.scale.set(scala, scala, scala)
-        }
+    //     if (group.current) {
+    //         group.current.scale.set(scala, scala, scala)
+    //     }
 
-    }, [])
+    // }, [])
 
 
 

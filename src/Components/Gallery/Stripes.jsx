@@ -50,7 +50,7 @@ const Stripes = ({ nStripe = 10 }) => {
     const handleScroll = ({ progress, velocity }) => {
       if (group.current) {
         let scale = -(velocity * 0.003) + 1;
-        group.current.position.y = progress * 200 * (nStripe - 2);
+        group.current.position.y = progress * 200 * (nStripe - 1.5);
         group.current.rotation.y = -progress * Math.PI * 2;
         group.current.scale.set(scale, scale, scale)
       }
